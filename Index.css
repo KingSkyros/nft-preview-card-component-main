@@ -19,10 +19,22 @@ main{
 }  
 
 .imgs{
-    background-color: hsl(178, 100%, 50%); 
+    background-image: url(./images/image-equilibrium.jpg);  
+    background-repeat: no-repeat;
     border-radius: 20px; 
-    display: flex;
+    border: none;  
+    display: block;   
+    width: 18rem; 
+    height: 18rem; 
+    background-size: 100%;  
+    background-color: hsl(178, 100%, 50%);
+}  
+
+.imgs:hover{
+    cursor: pointer; 
+    mix-blend-mode: hard-light;
 }
+
 
 h1{
     color: hsl(0, 0%, 100%); 
@@ -39,13 +51,9 @@ p{
 } 
 
 .cube-img{
-    max-width: 18rem;  
+    max-width: 100%;  
     border-radius: 20px;  
-} 
-
-.cube-img:hover{
-    background: hsl(178, 100%, 50%); 
-    mix-blend-mode: hard-light;
+    display: block;  
 }
 
 .avater{  
@@ -86,17 +94,14 @@ hr{
 }
 
 .eye{
-    position: absolute; 
     max-width: 18rem;  
-    border-radius: 20px; 
-    top: 12em;  
-    left: 41em;   
+    border-radius: 20px;  
     opacity: 1%;
 }   
 
 .eye:hover{
     opacity: 100%;
-}
+} 
  
 h1:hover{ 
     color: hsl(178, 100%, 50%); 
